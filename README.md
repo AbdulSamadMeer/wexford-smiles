@@ -13,3 +13,7 @@ Open `index.html` in a browser, or serve this directory with any static file ser
 - The listed new-patient, no-insurance special
 - Address, phone number, and weekly office hours
 - Color palette supplied for the redesign
+
+## Dental services
+
+The full service directory is available at `services/index.html`, with dedicated pages for checkups and cleanings, cosmetic and restorative dentistry, dental implants, dentures, oral surgery, children’s care, TMJ pain, and sleep apnea.
