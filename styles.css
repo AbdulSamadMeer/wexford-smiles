@@ -28,8 +28,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -61,13 +61,13 @@ button:focus-visible {
 
 .announcement {
   display: flex;
-  min-height: 37px;
+  min-height: 45px;
   align-items: center;
   justify-content: center;
   gap: 9px;
   background: var(--plum);
   color: var(--white);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
@@ -131,7 +131,7 @@ button:focus-visible {
   gap: 4px;
   color: var(--ink);
   font-family: var(--display);
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.07em;
 }
@@ -144,7 +144,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 34px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -160,14 +160,14 @@ button:focus-visible {
 
 .button {
   display: inline-flex;
-  min-height: 51px;
+  min-height: 56px;
   align-items: center;
   justify-content: center;
   gap: 17px;
-  padding: 0 23px;
+  padding: 0 28px;
   border: 0;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
@@ -178,9 +178,9 @@ button:focus-visible {
 }
 
 .button-small {
-  min-height: 42px;
-  padding: 0 17px;
-  font-size: 11px;
+  min-height: 48px;
+  padding: 0 20px;
+  font-size: 13px;
 }
 
 .button-plum {
@@ -223,7 +223,7 @@ button:focus-visible {
   gap: 9px;
   margin: 0 0 23px;
   color: var(--blue);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -253,7 +253,7 @@ h2 {
 
 h1 {
   margin-bottom: 18px;
-  font-size: clamp(52px, 6vw, 78px);
+  font-size: clamp(58px, 7vw, 88px);
   line-height: 1.03;
 }
 
@@ -267,7 +267,7 @@ h2 em {
   max-width: 425px;
   margin-bottom: 26px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
@@ -281,7 +281,7 @@ h2 em {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   transition: color 160ms ease;
 }
@@ -296,7 +296,7 @@ h2 em {
 .hero-notes p {
   margin: 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .hero-notes p span {
@@ -324,80 +324,15 @@ h2 em {
   isolation: isolate;
 }
 
-.art-sun {
-  position: absolute;
-  z-index: -2;
-  top: 50%;
-  left: 50%;
-  width: 390px;
-  height: 390px;
-  transform: translate(-48%, -49%);
-  border-radius: 50%;
-  background: var(--lime);
-}
-
-.art-orbit {
-  position: absolute;
-  z-index: -1;
-  width: 455px;
-  height: 455px;
-  border: 1px solid rgba(34, 116, 165, 0.22);
-  border-radius: 50%;
-}
-
-.orbit-two {
-  width: 500px;
-  height: 500px;
-  border-color: rgba(99, 43, 48, 0.11);
-}
-
-.art-card {
-  display: flex;
-  width: min(388px, 84%);
-  min-height: 351px;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 21px 17px;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 8px;
-  background: var(--white);
-  box-shadow: 0 20px 60px rgba(45, 50, 46, 0.12);
-  transform: rotate(2deg);
-}
-
-.art-card-top {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #78838b;
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-}
-
-.art-card-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--gold);
-}
-
-.smile-illustration {
+.hero-image,
+.approach-image {
   width: 100%;
-  max-height: 239px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(45, 50, 46, 0.15);
+  object-fit: cover;
 }
-
-.art-card-bottom {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--plum);
-  font-family: var(--display);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.smile-star {
   color: var(--gold);
   font-size: 15px;
 }
@@ -487,7 +422,7 @@ h2 em {
   gap: 10px;
   margin: 0;
   color: #465159;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -513,7 +448,7 @@ h2 em {
 .insurance-copy h2,
 .approach-copy h2 {
   margin-bottom: 0;
-  font-size: clamp(39px, 4.4vw, 54px);
+  font-size: clamp(44px, 5vw, 62px);
   line-height: 1.09;
 }
 
@@ -527,7 +462,7 @@ h2 em {
   max-width: 350px;
   margin: 0 3% 3px 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -576,7 +511,7 @@ h2 em {
   max-width: 210px;
   margin: 52px 0 10px;
   font-family: var(--display);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.05em;
 }
@@ -585,7 +520,7 @@ h2 em {
   max-width: 260px;
   margin-bottom: 19px;
   color: #58656b;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.75;
 }
 
@@ -599,7 +534,7 @@ h2 em {
 .care-note {
   margin: 23px 0 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -706,7 +641,7 @@ h2 em {
   max-width: 430px;
   margin-bottom: 23px;
   color: rgba(255, 255, 255, 0.79);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.9;
 }
 
@@ -721,7 +656,7 @@ h2 em {
   max-width: 450px;
   margin: 19px 0 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.85;
 }
 
@@ -760,7 +695,7 @@ h2 em {
 .offer-heading {
   margin: 20px 0 8px;
   font-family: var(--display);
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: -0.06em;
   line-height: 1.18;
@@ -769,7 +704,7 @@ h2 em {
 .offer-includes {
   margin-bottom: 16px;
   color: #6b6660;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .offer-includes span {
@@ -848,7 +783,7 @@ h2 em {
   align-items: flex-start;
   gap: 13px;
   color: rgba(255, 255, 255, 0.82);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -874,7 +809,7 @@ h2 em {
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   font-family: var(--display);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -899,7 +834,7 @@ h2 em {
 .hours-title h3 {
   margin: 0;
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: -0.05em;
 }
@@ -912,13 +847,13 @@ h2 em {
 .hours-subtitle {
   margin: 1px 0 14px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .hours-flexibility {
   margin: 0 0 12px;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.6;
 }
 
@@ -932,7 +867,7 @@ h2 em {
   gap: 14px;
   padding: 7px 0;
   border-bottom: 1px solid rgba(32, 42, 49, 0.08);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .hours-list dt {
@@ -982,7 +917,7 @@ h2 em {
 .footer-message {
   margin: 0;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.7;
 }
 
@@ -990,7 +925,7 @@ h2 em {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer-contact a {
@@ -999,7 +934,7 @@ h2 em {
 
 .footer-contact span {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .footer-top {
@@ -1016,7 +951,7 @@ h2 em {
   justify-content: space-between;
   border-top: 1px solid rgba(32, 42, 49, 0.13);
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .mobile-call {
